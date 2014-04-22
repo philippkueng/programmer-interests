@@ -1,6 +1,8 @@
-(ns programmer-interests.core)
+(ns programmer-interests.core
+  (:require [programmer-interests.config :as config]
+            [tentacles.core :as core]
+            [tentacles.repos :as repos]
+            [tentacles.users :as users]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(def auth
+  {:auth (str config/username ":" config/password)})

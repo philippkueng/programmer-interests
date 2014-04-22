@@ -1,0 +1,4 @@
+(ns programmer-interests.config)
+
+(def username "philippkueng")
+(def password "REDACTED")
